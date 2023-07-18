@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Pyramid 71</title>
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./assests/favicon.png" type="image/x-icon">
   </head>
   <body>
     <div id="wrapper" class="overflow-x-hidden">
@@ -16,7 +17,7 @@
             <div class="max-w-[1200px] w-[90%] m-auto">
                 <div class="navbar flex justify-between items-center  text-white">
                     <a href="index.html" class="nav-logo"><img src="assests/logo.webp" class="logo w-52 py-3"></a>
-                        <ul class="nav-links flex gap-10 font-bold">
+                        <ul class="nav-links font-bold hidden lg:flex gap-7">
                             <li><a href="#home" class="link-color">Home</a></li>
                             <li><a href="#overview" class="link-color">Overview</a></li>
                             <li><a href="#payment" class="link-color">Payment</a></li>
@@ -25,6 +26,9 @@
                             <li><a href="#contactus" class="link-color">Contact Us</a></li>
                             <li><a href="tel:9971080079" class="link-color">+91 9971080079</a></li>
                         </ul>
+                        <div class="hamburger lg:hidden">
+                            <i class="fa-solid fa-bars text-4xl"></i>
+                        </div>
                 </div>
             </div>
         </nav>
@@ -41,11 +45,57 @@
 
       <section>
         <div class="max-w-[1200px] w-[90%] m-auto">
-            <i class="fa-solid fa-indian-rupee-sign"></i>
+            <div class="flex justify-between py-5">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-indian-rupee-sign text-5xl text-[#C08831]"></i>
+                <p class="font-bold">On Request</p>
+            </div>
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-spinner text-5xl text-[#C08831]"></i>
+                <p class="font-bold">On Request</p>
+            </div>
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-building text-5xl text-[#C08831]"></i>
+                <p class="font-bold">On Request</p>
+            </div>
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-ruler-combined text-5xl text-[#C08831]"></i>
+                <p class="font-bold">On Request</p>
+            </div>
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-gavel text-5xl text-[#C08831]"></i>
+                <p class="font-bold">On Request</p>
+            </div>
+        </div>
+        </div>
+      </section>
+
+      <!-- =============================overview=========================================== -->
+
+      <section>
+        <p class="bg-[#c08831] text-center text-3xl text-white py-4">Overview</p>
+        <div class="max-w--[1200px] w-[90%] m-auto">
+            <div class="flex mt-5">
+
+                <div class="w-[50%] px-5">
+                    <h2 class="font-bold text-2xl mb-2">About Pyramid New Launch</h2>
+                    <p>In a thrilling development, Pyramid Infratech, a renowned real estate developer, is all set to unveil its latest offering in the form of a luxurious residential project in Sector 71, Gurgaon. Pyramid Infratech's strong reputation for delivering quality homes, this project is expected to meet the highest standards of craftsmanship and architectural brilliance.
+                    </p>
+                    <p>
+                        While specific details about the project's offerings, such as apartment types and amenities, are yet to be revealed, it is expected that the new luxury residential project will feature state-of-the-art facilities. Lavish landscaped gardens, a well-equipped clubhouse, rejuvenating spa and wellness center, sports facilities, and round-the-clock security are</p>
+                        
+                    <button type="button" class="bg-[#c08831] text-white text-[1.2rem] transition-all duration-400 px-5 py-2 mt-4 rounded-md hover:rounded-3xl hover:shadow-2xl ">Enquire Now</button>
+                </div>
+
+                <div class="w-[50%] px-5">
+                    <img src="./assests/overview.jpg" alt="overviewImage" width="100%">
+                </div>
+                </div>
         </div>
       </section>
 
 
     </div>
+    <!-- <script src="./logic.js" ></script> -->
   </body>
 </html>
