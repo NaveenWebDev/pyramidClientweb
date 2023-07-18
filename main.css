@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header{
+    background-image: url(./assests/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
