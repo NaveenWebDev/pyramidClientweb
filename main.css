@@ -10,3 +10,6 @@ header{
 .ham{
     right: 0%;
 }
+.none{
+    display: block;
+}

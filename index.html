@@ -9,7 +9,22 @@
     <link rel="shortcut icon" href="./assests/favicon.png" type="image/x-icon">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
-  <body>
+  <body class="bg-black text-white">
+    <div class="formpopup hidden h-screen w-full bg-[#00000071] fixed top-0 left-0 z-40 ">
+        <div class="grid place-items-center h-full">
+            <form class="border-2 border-[#c08831] p-5 relative">
+                <span class="close absolute top-0 right-0 bg-[#c08831] h-8 w-8 rounded-full grid place-items-center cursor-pointer">X</span>
+                <h2 class="text-2xl mb-5">Fill You Details Here</h2>
+                <input type="text" placeholder="Name" required class="my-1 w-full p-2 border-2 border-[#c08831]">
+                <input type="number" name="number" id="number" placeholder="Phone No" required class="my-1 w-full p-2 border-2 border-[#c08831]">
+            <br>
+            <input type="email" name="email" id="email" placeholder="Email" class="my-1 w-full p-2 border-2 border-[#c08831]">
+            <br>
+            <textarea name="message" id="message" placeholder="message" class="my-1 w-full p-2 border-2 border-[#c08831]"></textarea> <br>
+            <input type="submit" value="Submit" class="bg-[#c08831] px-8 py-2">
+        </form>
+    </div>
+    </div>
     <div id="wrapper" class="overflow-x-hidden">
 
       <header class="h-screen relative">
@@ -25,7 +40,7 @@
                             <li class="my-3 lg:my-0"><a href="#floorplan" class="link-color">Floor Plan</a></li>
                             <li class="my-3 lg:my-0"><a href="#location" class="link-color">Location</a></li>
                             <li class="my-3 lg:my-0"><a href="#contactus" class="link-color">Contact Us</a></li>
-                            <li class="my-3 lg:my-0"><a href="tel:9971080079" class="link-color">+91 9971080079</a></li>
+                            <li class="my-3 lg:my-0"><a href="tel:9971080079" class="bg-[#c08831] text-white text-[1.2rem] transition-all duration-400 px-5 py-2 mt-4 rounded-md hover:rounded-3xl hover:shadow-2xl  ">Call Now</a></li>
                         </ul>
                         <div class="hamburger lg:hidden z-20">
                             <i class="fa-solid fa-bars text-4xl"></i>
@@ -44,7 +59,7 @@
 
       <!-- =======================next short section============================== -->
 
-      <section>
+      <section class="text-white bg-black">
         <div class="max-w-[1200px] w-[90%] m-auto">
 
             <div class="flex justify-between flex-col md:flex-row py-5 gap-5">
@@ -55,19 +70,19 @@
             </div>
             <div class="flex items-center gap-3 border-b py-1 md:border-none ">
                 <i class="fa-solid fa-spinner text-5xl text-[#C08831]"></i>
-                <p class="font-bold">On Request</p>
+                <p class="font-bold">New Launch</p>
             </div>
             <div class="flex items-center gap-3 border-b py-1 md:border-none ">
                 <i class="fa-solid fa-building text-5xl text-[#C08831]"></i>
-                <p class="font-bold">On Request</p>
+                <p class="font-bold">3.5 BHK Luxury Apartments</p>
             </div>
             <div class="flex items-center gap-3 border-b py-1 md:border-none ">
                 <i class="fa-solid fa-ruler-combined text-5xl text-[#C08831]"></i>
-                <p class="font-bold">On Request</p>
+                <p class="font-bold">2300 Sq.Ft.</p>
             </div>
             <div class="flex items-center gap-3 border-b py-1 md:border-none ">
                 <i class="fa-solid fa-gavel text-5xl text-[#C08831]"></i>
-                <p class="font-bold">On Request</p>
+                <p class="font-bold">Applied</p>
             </div>
          </div>
 
@@ -76,7 +91,7 @@
 
       <!-- =============================overview=========================================== -->
 
-      <section>
+      <section class="text-white bg-black">
         <p class="bg-[#c08831] text-center text-3xl text-white py-4">Overview</p>
         <div class="max-w--[1200px] w-[90%] m-auto">
             <div class="flex flex-col-reverse md:flex-row mt-5">
@@ -88,7 +103,7 @@
                     <p>
                         While specific details about the project's offerings, such as apartment types and amenities, are yet to be revealed, it is expected that the new luxury residential project will feature state-of-the-art facilities. Lavish landscaped gardens, a well-equipped clubhouse, rejuvenating spa and wellness center, sports facilities, and round-the-clock security are</p>
                         
-                    <button type="button" class="bg-[#c08831] text-white text-[1.2rem] transition-all duration-400 px-5 py-2 mt-4 rounded-md hover:rounded-3xl hover:shadow-2xl ">Enquire Now</button>
+                    <button type="button" class="btn bg-[#c08831] text-white text-[1.2rem] transition-all duration-400 px-5 py-2 mt-4 rounded-md hover:rounded-3xl hover:shadow-2xl ">Enquire Now</button>
                 </div>
 
                 <div class="md:w-[50%] px-5 grid items-center">
@@ -190,14 +205,14 @@
             <!--======Change======-->
             <table class="w-[50%] ">
                 <tr>
-                    <th class="border border-black p-5">Inventry</th>
-                    <th class="border border-black p-5">Size (Sq.Ft.)</th>
-                    <th class="border border-black p-5">Price (₹)</th>
+                    <th class="border border-slate-700 p-5">Inventry</th>
+                    <th class="border border-slate-700 p-5">Size (Sq.Ft.)</th>
+                    <th class="border border-slate-700 p-5">Price (₹)</th>
                 </tr>
                 <tr>
-                    <td class="border border-black p-5 text-center">3.5 BHK</td>
-                    <td class="border border-black p-5 text-center">2300 Sq.Ft.</td>
-                    <td class="border border-black p-5 text-center"><button type="button" class="price-btn open_popup">Get Price</button></td>
+                    <td class="border border-slate-700 p-5 text-center">3.5 BHK</td>
+                    <td class="border border-slate-700 p-5 text-center">2300 Sq.Ft.</td>
+                    <td class="border border-slate-700 p-5 text-center"><button type="button" class="btn open_popup bg-[#c08831] rounded-lg p-2">Get Price</button></td>
                 </tr>
             </table>
         </div>
@@ -262,7 +277,7 @@
                         <li class="my-2"><i class="fa-solid fa-check"></i> 2 Minutes from upcoming metro</li>
                         <li class="my-2"><i class="fa-solid fa-check"></i> 5 Minutes from Dwarka expressway</li>
                     </ul>
-                    <button type="button" class="border-2 border-[#c08831] text-[#c08831] font-bold transition-all duration-400 py-2 px-5 mt-3 rounded-md hover:rounded-3xl hover:shadow-lg  ">Book Site Visit</button>
+                    <button type="button" class="btn border-2 border-[#c08831] text-[#c08831] font-bold transition-all duration-400 py-2 px-5 mt-3 rounded-md hover:rounded-3xl hover:shadow-lg  ">Book Site Visit</button>
                 </div>
             </div>
         </div>
@@ -287,7 +302,7 @@
                         <li><i class="fa-solid fa-check"></i> Men’s Grooming by The Art of Shaving</li>
                         <li><i class="fa-solid fa-check"></i> Modular Kitchen, Plush Italian Marble Flooring.</li>
                     </ul>
-                    <button type="button" class="bg-[#c08831] text-white font-bold transition-all duration-400 py-2 px-5 mt-3 rounded-md hover:rounded-3xl hover:shadow-lg  ">Enquire Now</button>
+                    <button type="button" class="btn bg-[#c08831] text-white font-bold transition-all duration-400 py-2 px-5 mt-3 rounded-md hover:rounded-3xl hover:shadow-lg  ">Enquire Now</button>
                 </div>
 
                 <div class="md:w-[50%] p-5">
@@ -333,13 +348,13 @@
             </div>
             
         </div>
-        <div class="bg-[#D2D4D7]">
+        <div>
 
             <div class="max-w-[1200px] w-[90%] m-auto">
                 
                 <div class="flex justify-between py-5 flex-col md:flex-row">
                     <p class="md:w-[70%]">PYRAMID is known to be the most strong and stable shape in geometry, which has been recognised uniformly by one and all, be it the ancient civilizations of Egypt or the engineers of this ultra-modern world. Our company stands for the same strength and stability that we offer to our clients through our buildings.</p>
-                    <button type="button" class=" border-2 border-[#c08831] text-[#c08831] font-bold transition-all duration-400 py-2 px-5 mt-3 rounded-md hover:rounded-3xl hover:shadow-lg  ">Book Site Visit</button>
+                    <button type="button" class="btn border-2 border-[#c08831] text-[#c08831] font-bold transition-all duration-400 py-2 px-5 mt-3 rounded-md hover:rounded-3xl hover:shadow-lg  ">Book Site Visit</button>
                 </div>
             </div>
         </div>
@@ -347,7 +362,7 @@
 
         <!-- ====================================contact Us ================================== -->
 
-        <section>
+        <section class="text-white bg-black">
             <p class="bg-[#c08831] text-center text-3xl text-white py-4">Contact Us</p>
             <div class="max-w-[1200px] w-[90%] m-auto">
                 
@@ -400,6 +415,44 @@
             </div>
         </footer>
     </div>
-    <script src="./logic.js" ></script>
+    <script>
+        const nav = document.querySelector(".hamburger");
+        const navlinks = document.querySelector("ul.nav-links");
+        const icon =  nav.childNodes[1]
+        nav.addEventListener("click", ()=>{
+            icon.classList.toggle("fa-x")
+            navlinks.classList.toggle("ham")
+        })
+
+$(document).ready(function(){
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll > 100) {
+            $("nav").css("background", "black");
+        } else {
+            $("nav").css("background", "transparent");
+        }
+    });
+})
+    const btn = document.querySelectorAll(".btn")
+    const popup = document.querySelector(".formpopup")
+    const close = document.querySelector(".close")
+    console.log(close)
+    close.addEventListener("click", ()=>{
+        popup.classList.remove("none")
+    })
+
+    for(let i = 0; btn.length; i++){
+        btn[i].addEventListener("click",()=>{
+            popup.classList.add("none")
+        })
+    }
+  
+
+
+
+
+
+    </script>
   </body>
 </html>
